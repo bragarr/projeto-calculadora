@@ -29,5 +29,5 @@
 
 .botao__calculadora {
     padding: 10px 10px 10px 10px;
-    border: 2px solid red;
+    border: 2px solid var(--cor-fundo);
 }
