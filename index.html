@@ -4,45 +4,80 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../projeto-calculadora/style/reset.css">
         <link rel="stylesheet" href="../projeto-calculadora/style/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="./img/favicon.ico">
         <title>Projeto - Calculadora</title>
     </head>
     <body>
-        <div class="container__calculadora">
-            <input type="text" class="tela__calculadora">
-            <ul class="container__botao">
-                <li class="botao__calculadora">CE</li>
-                <li class="botao__calculadora">C</li>
-                <li class="botao__calculadora">DEL</li>
-                <li class="botao__calculadora">÷</li>
-            </ul>
-            <ul class="container__botao">
-                <li class="botao__calculadora">7</li>
-                <li class="botao__calculadora">8</li>
-                <li class="botao__calculadora">9</li>
-                <li class="botao__calculadora">x</li>
-            </ul>
-            <ul class="container__botao">
-                <li class="botao__calculadora">4</li>
-                <li class="botao__calculadora">5</li>
-                <li class="botao__calculadora">6</li>
-                <li class="botao__calculadora">-</li>
-            </ul>
-            <ul class="container__botao">
-                <li class="botao__calculadora">1</li>
-                <li class="botao__calculadora">2</li>
-                <li class="botao__calculadora">3</li>
-                <li class="botao__calculadora">+</li>
-            </ul>
-            <ul class="container__botao">
-                <li class="botao__calculadora">+/-</li>
-                <li class="botao__calculadora">0</li>
-                <li class="botao__calculadora">.</li>
-                <li class="botao__calculadora">=</li>
-            </ul>
-        </div>
+        <header class="cabecalho__principal">
+            <img src="..//projeto-calculadora/img/Windows_Calculator_icon.png" alt="logo calculadora" class="imagem__cabecalho--principal">
+            <h1 class="titulo__projeto">Projeto: Calculadora</h1>
+            <img src="../projeto-calculadora/img/perfil.jpg" alt="logo com símbolo de caveira" class="imagem__cabecalho--principal perfil">
+            <p class="nome__criador">
+                Projetado por: <br>
+                Reinaldo Braga
+            </p>
+        </header>
+        <main>
+            <section class="apresentacao_Projeto--calcukadora">
+                <div class="apresentacao">
+                    <p class="texto__apresentacao">Este é meu primeiro projeto tem como principal objetivo reproduir uma calculadora utilizando 
+                        como base HTML, CSS e JavaScript, além da própria Lógica de Programação.</p>
+                    <img src="../projeto-calculadora/img/Logo_HMTL_CSS_JS.png" alt="Em ordem logo HTML, CSS, Javascript" class="imagem__linguagem">
+                </div>
+            </section>
+            <p class="texto__apresentacao indicacao">Abaixo você pode conferir a calculadora:</p>
+            <section class="apresentacao__calculadora">
+                <div class="container__calculadora">
+                    <div class="tela__botoes">
+                        <div class="barra__superior--calculadora">
+                            <!-- <img src="../projeto-calculadora/img/Windows_Calculator_icon.png" alt="logo da calculadora" class="logo__calculadora"> -->
+                            <h1 class="titulo__calculadora">Calculadora</h1>
+                         </div>
+                        <input type="text" maxlength="16" class="tela__calculadora">
+                        <ul class="container__botao">
+                            <li class="botao__calculadora">CE</li>
+                            <li class="botao__calculadora">C</li>
+                            <li class="botao__calculadora">DEL</li>
+                            <li class="botao__calculadora botao__operacao">÷</li>
+                        </ul>
+                        <ul class="container__botao">
+                            <li class="botao__calculadora">7</li>
+                            <li class="botao__calculadora">8</li>
+                            <li class="botao__calculadora">9</li>
+                            <li class="botao__calculadora botao__operacao">x</li>
+                        </ul>
+                        <ul class="container__botao">
+                            <li class="botao__calculadora">4</li>
+                            <li class="botao__calculadora">5</li>
+                            <li class="botao__calculadora">6</li>
+                            <li class="botao__calculadora botao__operacao">-</li>
+                        </ul>
+                        <ul class="container__botao">
+                            <li class="botao__calculadora">1</li>
+                            <li class="botao__calculadora">2</li>
+                            <li class="botao__calculadora">3</li>
+                            <li class="botao__calculadora botao__operacao">+</li>
+                        </ul>
+                        <ul class="container__botao">
+                            <li class="botao__calculadora">+/-</li>
+                            <li class="botao__calculadora">0</li>
+                            <li class="botao__calculadora">.</li>
+                            <li class="botao__calculadora botao__operacao botao__igual">=</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <footer class="rodape">
+                <p class="texto__rodape">Isto é uma simulação do texto final de rodape</p>
+            </footer>
+        </main>
     </body>
 </html>
