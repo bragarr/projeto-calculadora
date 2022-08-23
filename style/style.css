@@ -169,14 +169,14 @@ main, footer {
     justify-content: center;
 }
 
+.botao__reset {
+    width: 135px;
+}
+
 .botao__calculadora:hover {
     background-color: var(--cor-botao-ativado);
     cursor: pointer;
     text-align: center;
-}
-
-.botao__operacao {
-    font-size: 20px;
 }
 
 .botao__igual {
