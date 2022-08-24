@@ -8,11 +8,10 @@
     --var-cor-cabecalho: #15191C;
     --var-cor-fundo:  #1D232A;
     --fonte-calculadora: 'Figtree', sans-serif;
-    --fonte-padrao: 'Open Sans', sans-serif;
 }
 
 body {
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-calculadora);
 }
 
 .cabecalho__principal {
@@ -31,7 +30,7 @@ main, footer {
 
 .titulo__projeto {
     text-align: center;
-    font-size: 2em;
+    font-size: 4em;
     flex: 2;
 }
 
@@ -43,24 +42,19 @@ main, footer {
     border-radius: 50%;
 }
 
-.titulo__apresentacao {
-    font-size: 2.0em;
-    font-weight: 600;
-    text-align: left;
-    padding: 1em;
-}
-
 .apresentacao {
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
     padding: 1em;
 }
 
 .texto__apresentacao {
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 300;
     width: 40%;
+    padding: 3em 0;
+    text-align: justify;
 }
 
 .imagem__linguagem {
@@ -71,8 +65,6 @@ main, footer {
 .apresentacao__calculadora {
     display: block;
     text-align: center;
-    margin: 10em 0;
-
 }
 
 .indicacao {
@@ -87,6 +79,7 @@ main, footer {
     border-radius: 10px;
     padding: 1px 1px;
     font-family: var(--fonte-calculadora);
+    user-select: none;
 }
 
 .tela__botoes {
@@ -102,19 +95,36 @@ main, footer {
     padding-left: 20px;    
 }
 
-/* .logo__calculadora {
-    width: 20px;
-} */
-
 .titulo__calculadora::before {
     content: url(../img/Windows_Calculator_icon2.png);
     margin-right: 20px;
 }
 
-.lista__de__comandos {
+.lista__casas--decimais {
     display: flex;
-    list-style-type: none;
-    color: var(--cor-fundo-calculadora);
+    flex-direction: row;
+    right: 40%;
+    top: 85%;
+}
+
+.botao__decimais {
+    padding: 5px 5px 5px 5px;
+    background-color: var(--cor-fundo-botao);
+    color: var(--cor-fonte-principal);
+    margin-top: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 15px;
+    min-height: auto;
+    font-size: 15px;
+}
+
+.botao__decimais:hover {
+    cursor: pointer;
+}
+
+.botao__ativado {
+    background-color: var(--vor-botao--azul-ativado);
 }
 
 .comandos__barra--superior {
@@ -189,5 +199,13 @@ main, footer {
 }
 
 .rodape {
-    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.texto__rodape {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0;
+    padding: 5em 0px;
 }
