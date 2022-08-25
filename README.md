@@ -2,7 +2,7 @@
 
 Objetivo do Projeto:
 
-O principal objetivo deste projeto é desenvolver um app de Calculadora que executa as 4 operações báscisas da matemática: Adição, Subtração, Multiplicação e Divisão. Este projeto possui funcionalidade através de uma página Web, cuja parte da proposta é desenvolver e fortificar habilidades na manipulação de dados com HTML, CSS e JavaScript.
+O principal objetivo deste projeto é desenvolver um app de Calculadora que executa as 4 operações básicas da matemática: Adição, Subtração, Multiplicação e Divisão. Este projeto possui funcionalidade através de uma página Web, cuja parte da proposta é desenvolver e fortificar habilidades na manipulação de dados com HTML, CSS e JavaScript.
 
 Abaixo você consegue conferir o link para acessar a aplicação deste projeto:
 
