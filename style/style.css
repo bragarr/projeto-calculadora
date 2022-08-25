@@ -12,6 +12,8 @@
 
 body {
     font-family: var(--fonte-calculadora);
+    background-color: var(--var-cor-fundo);
+    color: var(--cor-fonte-principal);
 }
 
 .cabecalho__principal {
@@ -21,11 +23,7 @@ body {
     padding: 3em 1.5em;
     background-color: var(--var-cor-cabecalho);
     color: var(--cor-fonte-principal);
-}
-
-main, footer {
-    background-color: var(--var-cor-fundo);
-    color: var(--cor-fonte-principal);
+    box-shadow: 0 5px 5px purple;
 }
 
 .titulo__projeto {
@@ -89,9 +87,9 @@ main, footer {
     background-color: var(--cor-fundo-calculadora);
     color: var(--cor-fonte-principal);
     text-align: center;
-    border-radius: 10px;
     padding: 10px 5px;
-
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #000000;
 }
 
 .container__calculadora {
@@ -101,6 +99,7 @@ main, footer {
     padding: 1px 1px;
     font-family: var(--fonte-calculadora);
     user-select: none;
+    box-shadow: 0px 0px 8px 8px purple;
 }
 
 .tela__botoes {
@@ -209,6 +208,8 @@ main, footer {
 .link__externo:hover {
     border-bottom: 2px solid purple;
     color: purple;
+    font-size: large;
+    transition: 400ms;
 }
 
 @media screen and (max-width:480px) {
