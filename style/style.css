@@ -4,7 +4,7 @@
     --cor-fundo-botao: #242427;
     --cor-botao-ativado: #3B3B3B;
     --vor-botao--azul:#41ADD8;
-    --vor-botao--azul-ativado:#41ADD8C4;
+    --vor-botao--azul-ativado:#41add886;
     --var-cor-cabecalho: #15191C;
     --var-cor-fundo:  #1D232A;
     --fonte-calculadora: 'Figtree', sans-serif;
@@ -58,7 +58,7 @@ main, footer {
 }
 
 .imagem__linguagem {
-    width: 20%;
+    width: 30%;
     padding: 1em 2em;
 }
 
@@ -68,9 +68,30 @@ main, footer {
 }
 
 .indicacao {
-    padding-top: 3em;
+    padding-top: 1em;
     width: 100%;
     text-align: center;
+}
+
+.lista__operacoes {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+.operacoes__matematicas--simbolo {
+    width: 80px;
+    font-size: 30px;
+    margin: 0 25px;
+    background-color: var(--cor-fundo-calculadora);
+    color: var(--cor-fonte-principal);
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 5px;
+
 }
 
 .container__calculadora {
@@ -100,38 +121,8 @@ main, footer {
     margin-right: 20px;
 }
 
-.lista__casas--decimais {
-    display: flex;
-    flex-direction: row;
-    right: 40%;
-    top: 85%;
-}
-
-.botao__decimais {
-    padding: 5px 5px 5px 5px;
-    background-color: var(--cor-fundo-botao);
-    color: var(--cor-fonte-principal);
-    margin-top: 10px;
-    margin-right: 5px;
-    border-radius: 50%;
-    width: 15px;
-    min-height: auto;
-    font-size: 15px;
-}
-
-.botao__decimais:hover {
-    cursor: pointer;
-}
-
 .botao__ativado {
     background-color: var(--vor-botao--azul-ativado);
-}
-
-.comandos__barra--superior {
-    padding-right: 15px;
-    font-size: 20px;
-    background-color: white;
-    margin: 0 0 0 0;
 }
 
 .titulo__calculadora {
@@ -204,8 +195,47 @@ main, footer {
 
 .texto__rodape {
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 0 0 0;
     padding: 5em 0px;
+}
+
+.link__externo {
+    margin: 2em 0;
+}
+
+.link__externo:hover {
+    border-bottom: 2px solid purple;
+    color: purple;
+}
+
+@media screen and (max-width:480px) {
+    .titulo__projeto {
+        font-size: 1.5em;
+    }
+
+    .texto__apresentacao {
+        font-size: 0.75em;
+    }
+
+    .lista__operacoes {
+        padding-bottom: 60px;
+    }
+
+    .texto__rodape {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.75em;
+        text-align: center;
+    }
+
+    .link__externo {
+        background-color: purple;
+        color: var(--cor-fonte-principal);
+        margin: 2em 0;
+        padding: 1em 2em;
+        border-radius: 1em;
+    }
 }

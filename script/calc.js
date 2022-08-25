@@ -27,7 +27,7 @@ function ativaTecladoNumerico() {
                     let tamanho = tela.value.length;
                     tela.value = tela.value.substring(0,tamanho-1);
                     tela.value += botao.value;
-                } else { 
+                } else if (tela.value.length < 17){ 
                     tela.value += botao.value;
                 }
             }
