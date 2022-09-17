@@ -41,23 +41,20 @@ body {
 }
 
 .apresentacao {
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    padding: 1em;
+    text-align: center;
+    padding: 50px 20px;
+   
 }
 
 .texto__apresentacao {
-    font-size: 1.5em;
-    font-weight: 300;
-    width: 40%;
-    padding: 3em 0;
-    text-align: justify;
+    font-size: 2em;
+    padding: 50px;
+    text-align: center;
 }
 
 .imagem__linguagem {
     width: 30%;
-    padding: 1em 2em;
+    padding: 0.5em 2em;
 }
 
 .apresentacao__calculadora {
@@ -69,27 +66,6 @@ body {
     padding-top: 1em;
     width: 100%;
     text-align: center;
-}
-
-.lista__operacoes {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 120px;
-}
-
-.operacoes__matematicas--simbolo {
-    width: 80px;
-    font-size: 30px;
-    margin: 0 25px;
-    background-color: var(--cor-fundo-calculadora);
-    color: var(--cor-fonte-principal);
-    text-align: center;
-    padding: 10px 5px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 3px #000000;
 }
 
 .container__calculadora {
@@ -190,6 +166,7 @@ body {
 
 .rodape {
     margin: 0 0 0 0;
+    padding: 0 20px;
 }
 
 .texto__rodape {
@@ -212,17 +189,168 @@ body {
     transition: 400ms;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:1200px) {
+    .titulo__projeto {
+        font-size: 3em;
+    }
+
+    .texto__apresentacao {
+        font-size: 1.5em;
+    }
+
+    .imagem__linguagem {
+        width: 45%;
+    }
+
+    .texto__rodape {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .link__externo {
+        background-color: purple;
+        color: var(--cor-fonte-principal);
+        margin: 2em 0;
+        padding: 1em 2em;
+        border-radius: 1em;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .titulo__projeto {
+        font-size: 2.5em;
+    }
+
+    .texto__apresentacao {
+        font-size: 1.25em;
+    }
+
+    .imagem__linguagem {
+        width: 45%;
+    }
+
+    .texto__rodape {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.25em;
+        text-align: center;
+    }
+
+    .link__externo {
+        background-color: purple;
+        color: var(--cor-fonte-principal);
+        margin: 2em 0;
+        padding: 1em 2em;
+        border-radius: 1em;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .cabecalho__principal {
+        padding: 2em 1.5em;
+    }
+    .nome__criador {
+        font-size: 12px;
+    }
+    
+    .titulo__projeto {
+        font-size: 2.0em;
+    }
+
+    .apresentacao {
+        padding: 0;
+    }
+
+    .texto__apresentacao {
+        font-size: 1.25em;
+    }
+
+    .imagem__linguagem {
+        width: 45%;
+    }
+
+    .texto__rodape {
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .link__externo {
+        background-color: purple;
+        color: var(--cor-fonte-principal);
+        margin: 2em 0;
+        padding: 1em 2em;
+        border-radius: 1em;
+    }
+}
+
+@media screen and (max-width:520px) {
     .titulo__projeto {
         font-size: 1.5em;
     }
 
+    .imagem__linguagem {
+        width: 45%;
+    }
+
     .texto__apresentacao {
-        font-size: 0.75em;
+        font-size: 1em;
+    }
+
+    .texto__rodape {
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .link__externo {
+        background-color: purple;
+        color: var(--cor-fonte-principal);
+        margin: 2em 0;
+        padding: 1em 2em;
+        border-radius: 1em;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+
+    .nome__criador {
+        font-size: 10px;
+    }
+    
+    .titulo__projeto {
+        font-size: 1.0em;
+    }
+
+    .texto__apresentacao {
+        font-size: 0.65em;
+        padding: 1.5em 5em;
     }
 
     .lista__operacoes {
         padding-bottom: 60px;
+    }
+
+    .funcionalidades {
+        padding: 10px 0;
+    }
+
+    .tela__calculadora {
+        font-size: 20px;
+    } 
+
+    .botao__calculadora {
+        padding: 10px 20px 10px 20px;
+        font-size: 10px;
+    }
+
+    .botao__reset {
+        width: 115px;
     }
 
     .texto__rodape {
